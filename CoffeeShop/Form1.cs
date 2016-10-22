@@ -10,11 +10,22 @@ using System.Windows.Forms;
 
 namespace CoffeeShop
 {
-    public partial class Form1 : Form
+    public partial class CoffeeShopAdmin : Form
     {
-        public Form1()
+        public CoffeeShopAdmin()
         {
             InitializeComponent();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutCoffeeShop about = new AboutCoffeeShop();
+            about.Show();
+        }
+
+        private void countFlavorsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
